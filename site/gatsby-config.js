@@ -16,12 +16,5 @@ module.exports = {
         path: `${__dirname}/src/data/`,
       },
     },
-    {
-      resolve: "gatsby-background-image-es5",
-      options: {
-        // add your own characters to escape, replacing the default ':/'
-        specialChars: "/:",
-      },
-    },
   ],
 }
