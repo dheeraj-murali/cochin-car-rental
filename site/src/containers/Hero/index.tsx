@@ -24,7 +24,7 @@ export const Hero = () => {
 
   return (
     <main
-      className="flex w-screen h-screen text-white"
+      className="flex w-screen h-screen text-white bg-gradient-to-r from-wineDark to-black"
       style={{ minHeight: "25rem" }}
     >
       <Img
