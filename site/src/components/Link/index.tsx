@@ -2,16 +2,16 @@ import React from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
 export const Link = (props: LinkProps) => {
-  const { text, to } = props
+  const { children, to } = props
 
   return (
     <AnchorLink href={to} className="hover:text-wine">
-      {text}
+      {children}
     </AnchorLink>
   )
 }
 
 declare interface LinkProps {
-  text: string
+  children?: React.ReactNode
   to: string
 }
