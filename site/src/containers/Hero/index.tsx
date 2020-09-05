@@ -1,6 +1,8 @@
-import { useStaticQuery, graphql } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image/withIEPolyfill"
 import React from "react"
+import { Link } from "../../components"
+import { config } from "../../config/hero"
 
 export const Hero = () => {
   const data = useStaticQuery(graphql`
@@ -8,7 +10,7 @@ export const Hero = () => {
       file(relativePath: { eq: "images/hero.jpg" }) {
         id
         childImageSharp {
-          fluid(maxWidth: 1000, jpegQuality: 80) {
+          fluid(jpegQuality: 80) {
             aspectRatio
             base64
             sizes
@@ -21,15 +23,33 @@ export const Hero = () => {
   `)
 
   return (
-    <BackgroundImage
-      Tag="section"
-      className="w-screen h-screen text-white"
-      fluid={data.file.childImageSharp.fluid}
-      backgroundColor={`#040e18`}
+    <main
+      className="flex w-screen h-screen text-white"
+      style={{ minHeight: "25rem" }}
     >
-      <div className="flex items-center w-full h-full">
-        <h1 className="">Hire cars, Like never Before</h1>
+      <Img
+        fluid={data.file.childImageSharp.fluid}
+        objectFit="cover"
+        objectPosition="50% 50%"
+        className="w-full h-full"
+        alt="Awesome picture os cars in showroom"
+      />
+      <div
+        className="flex flex-col justify-center absolute w-full h-full p-3 md:p-20 lg:p-40"
+        style={{ minHeight: "25rem" }}
+      >
+        <div>
+          <h1 className="text-5xl md:6xl whitespace-pre-line">
+            {config.title}
+          </h1>
+          <p className="font-light py-4">{config.subtitle}</p>
+        </div>
+        <Link to="#About">
+          <button className="p-3 px-10 bg-transparent border rounded-lg hover:bg-black text-white lg:mt-10">
+            Find out more
+          </button>
+        </Link>
       </div>
-    </BackgroundImage>
+    </main>
   )
 }
