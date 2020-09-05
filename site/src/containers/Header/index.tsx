@@ -1,10 +1,11 @@
 import React from "react"
-import { Logo } from "../components/logo"
+import { Logo, Nav } from "../../components"
 
 export const Header = () => {
   return (
     <div className="text-xl">
       <Logo />
+      <Nav />
     </div>
   )
 }
