@@ -1,5 +1,4 @@
 import React from "react"
-import { IconType } from "react-icons/lib"
 
 export const Feat = (prop: FeatProp) => {
   const { children, content, title } = prop
@@ -10,7 +9,7 @@ export const Feat = (prop: FeatProp) => {
         {children}
       </div>
       <h2 className="p-3 text-xl text-center">{title}</h2>
-      <hr className="border-2 w-10 rounded" />
+      <hr className="border-2 w-10 rounded border-wine" />
       <p className="text-center p-3 text-sm font-light">{content}</p>
     </div>
   )

@@ -6,7 +6,7 @@ import { config } from "../../config/hero"
 
 export const Hero = () => {
   const data = useStaticQuery(graphql`
-    query MyQuery {
+    query HeroImage {
       file(relativePath: { eq: "images/hero.jpg" }) {
         id
         childImageSharp {
@@ -32,7 +32,7 @@ export const Hero = () => {
         objectFit="cover"
         objectPosition="50% 50%"
         className="w-full h-full"
-        alt="Awesome picture os cars in showroom"
+        alt="Awesome picture of cars in showroom"
       />
       <div
         className="flex flex-col justify-center absolute w-full h-full p-3 md:p-20 lg:p-40"
