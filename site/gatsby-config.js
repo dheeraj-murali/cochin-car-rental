@@ -6,7 +6,16 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Cochin car rentals",
+    titleTemplate: "%s · Rent cars like never before",
+    description: "The right place to rent cars in kochi.",
+    url: "https://www.cochincarrentals.com", // No trailing slash allowed!
+    image: "/images/logo.png", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@_mdrj",
+  },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
