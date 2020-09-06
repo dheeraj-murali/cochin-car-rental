@@ -1,3 +1,4 @@
+export { CarCard } from "./CarCard"
 export { Feat } from "./Feat"
 export { Link } from "./Link"
 export { Logo } from "./Logo"

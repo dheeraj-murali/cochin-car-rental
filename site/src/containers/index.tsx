@@ -1,4 +1,5 @@
+export { About } from "./About"
+export { Fleet } from "./Fleet"
 export { Header } from "./Header"
 export { Hero } from "./Hero"
-export { About } from "./About"
 export { Special } from "./Special"
