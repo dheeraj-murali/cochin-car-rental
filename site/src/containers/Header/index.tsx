@@ -1,5 +1,6 @@
 import React from "react"
 import { Logo, Nav } from "../../components"
+import { config } from "../../config/header"
 
 export const Header = () => {
   return (
@@ -8,7 +9,7 @@ export const Header = () => {
         <Logo />
       </div>
       <div className="flex flex-grow justify-center">
-        <Nav />
+        <Nav links={config.navLinks} />
       </div>
     </header>
   )

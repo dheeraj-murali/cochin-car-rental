@@ -16,6 +16,8 @@ export const Hero = () => {
             sizes
             src
             srcSet
+            srcSetWebp
+            srcWebp
           }
         }
       }
@@ -34,6 +36,7 @@ export const Hero = () => {
         className="w-full h-full"
         alt="Awesome picture of cars in showroom"
       />
+
       <div
         className="flex flex-col justify-center absolute w-full h-full p-3 md:p-20 lg:p-40"
         style={{ minHeight: "25rem" }}
@@ -42,12 +45,15 @@ export const Hero = () => {
           <h1 className="text-5xl md:6xl whitespace-pre-line">
             {config.title}
           </h1>
+
           <p className="font-light py-4">{config.subtitle}</p>
         </div>
-        <Link to="#About">
-          <button className="p-3 px-10 bg-transparent border rounded-lg hover:bg-black text-white lg:mt-10">
-            Find out more
-          </button>
+
+        <Link
+          className="p-3 px-10 w-48 bg-transparent border rounded-lg hover:bg-black text-white lg:mt-10"
+          to="#About"
+        >
+          Find out more
         </Link>
       </div>
     </main>
