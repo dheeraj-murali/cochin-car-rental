@@ -23,6 +23,9 @@ export const SEO = () => {
 
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
+      {/* html attributes */}
+      <html lang="en" />
+
       {/* basic tags */}
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
