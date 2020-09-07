@@ -9,7 +9,7 @@ export const CallUs = (props: CallUsProps) => {
       <hr className="border border-white w-1/2" />
       <a
         href={`tel:${phone}`}
-        className="text-white text-4xl p-3 hover:text-black"
+        className="text-white text-3xl md:text-4xl p-3 hover:text-black"
       >
         {phone}
       </a>
