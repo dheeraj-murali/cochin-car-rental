@@ -53,7 +53,7 @@ export const Fleet = () => {
     >
       <Title>Our fleet</Title>
 
-      <div className="flex overflow-scroll">
+      <div className="flex overflow-scroll no-scroll-bar">
         <ul className="inline-flex lg:flex-wrap lg:justify-center">
           {fleets.map((fleet, index) => (
             <li
