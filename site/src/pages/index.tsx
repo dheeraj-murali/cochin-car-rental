@@ -1,6 +1,14 @@
 import React from "react"
-import { About, Fleet, Header, Hero, SEO, Special } from "../containers"
-import { Package } from "../containers/Package"
+import {
+  About,
+  Contact,
+  Fleet,
+  Header,
+  Hero,
+  Package,
+  SEO,
+  Special,
+} from "../containers"
 
 export default function Home() {
   return (
@@ -12,6 +20,7 @@ export default function Home() {
       <Special />
       <Fleet />
       <Package />
+      <Contact />
     </>
   )
 }
