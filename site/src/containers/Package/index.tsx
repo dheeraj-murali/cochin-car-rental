@@ -17,7 +17,7 @@ export const Package = () => {
         </p>
 
         <Link
-          className="p-3 px-10 bg-transparent border border-wineDark text-wineDark rounded-lg hover:bg-black hover:text-white lg:mt-10"
+          className="p-3 px-10 bg-transparent border border-wineDark text-wineDark rounded-lg hover:bg-wineDark hover:text-white lg:mt-10"
           to="#Contact"
         >
           Book now
