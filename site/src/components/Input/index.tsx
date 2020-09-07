@@ -13,7 +13,7 @@ export const Input = (props: InputProps) => {
           value={value}
           id={id}
           maxLength={2000}
-          className="border border-gray-500 px-3 py-2 mx-2 my-3 w-full"
+          className="border border-gray-500 px-3 py-2 mx-2 my-3"
           placeholder="Your message"
           rows={5}
           onChange={e => onChange(e)}
