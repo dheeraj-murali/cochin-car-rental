@@ -8,9 +8,9 @@ export const Package = () => {
       <article className="flex flex-col justify-center items-center max-w-4xl py-10">
         <Title black>{config.title}</Title>
 
-        <h3 className="text-center text-lg mb-5 font-semibold text-wineDark">
+        <h2 className="text-center text-lg mb-5 font-semibold text-wineDark">
           {config.subtitle}
-        </h3>
+        </h2>
 
         <p className="max-w-2xl text-center mb-5 whitespace-pre-line">
           {config.content}
