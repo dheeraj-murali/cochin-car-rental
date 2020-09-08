@@ -1,28 +1,54 @@
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image/withIEPolyfill"
 import React from "react"
-import { Title, Link } from "../../components"
+import { Link, Title, PackageCard } from "../../components"
 import { config } from "../../config/package"
 
 export const Package = () => {
+  const data = useStaticQuery(graphql`
+    query packageImages {
+      allFile(
+        filter: {
+          extension: { regex: "/(jpg)/" }
+          name: { regex: "/(package)/" }
+        }
+      ) {
+        edges {
+          node {
+            name
+            childImageSharp {
+              fluid {
+                aspectRatio
+                base64
+                sizes
+                src
+                srcSet
+                srcSetWebp
+                srcWebp
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const packages = config(data.allFile.edges)
+
   return (
-    <section id="Package" className="w-screen flex justify-center p-5 bg-white">
-      <article className="flex flex-col justify-center items-center max-w-4xl py-10">
-        <Title black>{config.title}</Title>
+    <section
+      id="Package"
+      className="w-screen flex flex-col py-5 px-3 justify-center items-center bg-white"
+    >
+      <Title black>Special packages</Title>
 
-        <h2 className="text-center text-lg mb-5 font-semibold text-wineDark">
-          {config.subtitle}
-        </h2>
-
-        <p className="max-w-2xl text-center mb-5 whitespace-pre-line">
-          {config.content}
-        </p>
-
-        <Link
-          className="p-3 px-10 bg-transparent border border-wineDark text-wineDark rounded-lg hover:bg-wineDark hover:text-white lg:mt-10"
-          to="#Contact"
-        >
-          Book now
-        </Link>
-      </article>
+      <ul className="w-full inline-flex flex-wrap justify-evenly">
+        {packages.map((item, index) => (
+          <li key={`${index}_packageCards`} className="p-1">
+            <PackageCard {...item} />
+          </li>
+        ))}
+      </ul>
     </section>
   )
 }
