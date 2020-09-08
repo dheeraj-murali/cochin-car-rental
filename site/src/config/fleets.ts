@@ -12,9 +12,9 @@ export const config = fleets => {
           tags: [
             "AC",
             "24 Hr customer service",
-            "charged per day",
-            "safety",
-            "Road side assistance",
+            "Music System",
+            "Mobile Charging Socket",
+            "Boot Space 378L - 490L",
           ],
           banner,
           id: 1,
@@ -29,9 +29,9 @@ export const config = fleets => {
           tags: [
             "AC",
             "24 Hr customer service",
-            "charged per day",
-            "safety",
-            "Road side assistance",
+            "Music System",
+            "Mobile Charging Socket",
+            "Boot Space 378L - 490L",
           ],
           banner,
           id: 2,
@@ -42,12 +42,12 @@ export const config = fleets => {
         return {
           title: `Family Class`,
           type: `SUV / Traveller`,
-          seats: `4 - 12`,
+          seats: `4 - 26`,
           tags: [
             "AC",
-            "24 Hr customer service",
-            "charged per day",
-            "safety",
+            "Music & TV System",
+            "Reclining Seats",
+            "Individual AC Ducts",
             "Road side assistance",
           ],
           banner,
@@ -57,14 +57,14 @@ export const config = fleets => {
 
       if (name === "fleet4") {
         return {
-          title: `Bus Class`,
+          title: `Coach Class`,
           type: `Bus / Mini bus`,
-          seats: `12 - 24`,
+          seats: `20 - 49`,
           tags: [
             "AC",
-            "24 Hr customer service",
-            "charged per day",
-            "safety",
+            "Music & TV System",
+            "Reclining Seats",
+            "Individual AC Ducts",
             "Road side assistance",
           ],
           banner,
