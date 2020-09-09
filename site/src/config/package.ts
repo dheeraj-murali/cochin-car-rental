@@ -12,8 +12,8 @@ export const config = packages =>
 
     if (name == "package2")
       return {
-        title: `Take a dream trip to Munnar`,
-        content: `We provide reliable car rental options from Kochi to the relaxing wilderness of Munnar tea estates. With a verity of rental options to choose from, we guarantee to provide the best service available for you.`,
+        title: `Get the blessing from Lord Krishna`,
+        content: `We provide reliable car rental options from Kochi to the Guruvayur Temple. With a verity of rental options to choose from, we guarantee to provide the best service available for you.`,
         banner,
       }
   })
