@@ -23,7 +23,7 @@ export const PackageCard = (props: PackageCardProps) => {
           fluid={banner}
           objectFit="cover"
           objectPosition="50% 50%"
-          className="w-full h-full"
+          className="w-full h-full op"
           alt="Awesome picture os cars in showroom"
         />
       </div>
@@ -37,7 +37,7 @@ export const PackageCard = (props: PackageCardProps) => {
         </p>
 
         <Link
-          className="p-3 px-10 bg-transparent border border-wineDark text-wineDark rounded-lg hover:bg-wineDark hover:text-white "
+          className="p-3 px-10 bg-transparent border border-wineDark text-wineDark rounded-lg hover:bg-black hover:text-white "
           to="#Contact"
         >
           Book now

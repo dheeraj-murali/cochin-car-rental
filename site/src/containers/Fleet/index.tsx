@@ -46,7 +46,7 @@ export const Fleet = () => {
   return (
     <section
       id="Fleet"
-      className="flex flex-col justify-around py-5 pl-5 md:pr-5 w-screen bg-cover bg-gradient-to-b from-black to-wineDark"
+      className="flex flex-col justify-around py-5 pl-5 md:pr-5 w-screen bg-cover"
       style={{
         backgroundImage: `url(${data.file.childImageSharp.fluid.src})`,
       }}

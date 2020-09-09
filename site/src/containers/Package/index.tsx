@@ -40,7 +40,7 @@ export const Package = () => {
       id="Package"
       className="w-screen flex flex-col py-5 px-3 justify-center items-center bg-white"
     >
-      <Title black>Special packages</Title>
+      <Title black>Seasonal packages</Title>
 
       <ul className="w-full inline-flex flex-wrap justify-evenly">
         {packages.map((item, index) => (
