@@ -6,7 +6,7 @@ export const Special = () => {
   return (
     <section
       id="Special"
-      className="w-screen flex-col justify-center px-5 py-10 bg-gradient-to-b from-wineDark to-black"
+      className="w-screen flex-col justify-center px-5 py-20 bg-gradient-to-b from-wineDark to-black"
     >
       <Title>{config.title}</Title>
 

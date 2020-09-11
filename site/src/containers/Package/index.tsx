@@ -38,7 +38,7 @@ export const Package = () => {
   return (
     <section
       id="Package"
-      className="w-screen flex flex-col py-5 px-3 justify-center items-center bg-white"
+      className="w-screen flex flex-col py-20 px-3 justify-center items-center bg-white"
     >
       <Title black>Seasonal packages</Title>
 

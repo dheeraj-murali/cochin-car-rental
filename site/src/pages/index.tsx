@@ -8,6 +8,7 @@ import {
   Package,
   SEO,
   Special,
+  Reviews,
 } from "../containers"
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <Special />
       <Fleet />
       <Package />
+      <Reviews />
       <Contact />
     </>
   )
