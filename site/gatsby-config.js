@@ -25,5 +25,12 @@ module.exports = {
         path: `${__dirname}/src/data/`,
       },
     },
+    // {
+    //   resolve: `gatsby-source-google-places`,
+    //   options: {
+    //     placeIds: ["ChIJ3bMPiEYHCDsRiyVTkkcGdB4"],
+    //     apiKey: "AIzaSyAmcGxMOQGofE_eoCi-VbkOH_fwHXI2GKQ",
+    //   },
+    // },
   ],
 }
