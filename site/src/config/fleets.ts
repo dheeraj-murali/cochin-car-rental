@@ -7,14 +7,14 @@ export const config = fleets => {
       if (name === "fleet1") {
         return {
           title: `Standard Class`,
-          type: `Hatchbacks / Sedans`,
+          type: `Sedans`,
           seats: `4`,
           tags: [
             "AC",
             "24 Hr customer service",
             "Music System",
             "Mobile Charging Socket",
-            "Boot Space 378L - 490L",
+            "Boot Space 378L - 592L",
           ],
           banner,
           id: 1,
@@ -23,15 +23,15 @@ export const config = fleets => {
 
       if (name === "fleet2") {
         return {
-          title: `Business Class`,
-          type: `Sedans`,
-          seats: `4`,
+          title: `Family Class`,
+          type: `SUVs`,
+          seats: `6 - 7`,
           tags: [
             "AC",
             "24 Hr customer service",
             "Music System",
             "Mobile Charging Socket",
-            "Boot Space 378L - 490L",
+            "Boot Space 195L - 300L",
           ],
           banner,
           id: 2,
@@ -40,9 +40,9 @@ export const config = fleets => {
 
       if (name === "fleet3") {
         return {
-          title: `Family Class`,
-          type: `SUV / Traveller`,
-          seats: `4 - 26`,
+          title: `Van Class`,
+          type: `Van / Traveller`,
+          seats: `8 - 26`,
           tags: [
             "AC",
             "Music & TV System",
@@ -58,7 +58,7 @@ export const config = fleets => {
       if (name === "fleet4") {
         return {
           title: `Coach Class`,
-          type: `Bus / Mini bus`,
+          type: `Bus`,
           seats: `20 - 49`,
           tags: [
             "AC",
