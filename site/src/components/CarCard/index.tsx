@@ -3,11 +3,11 @@ import Img from "gatsby-image/withIEPolyfill"
 import { Badge } from "../"
 
 export const CarCard = (props: CarCardProps) => {
-  const { title, banner, seats, tags, type } = props
+  const { title, banner, seats, onClick, tags, type } = props
 
   return (
-    <div className="bg-white max-w-sm md:max-w-lg rounded-lg shadow-lg overflow-hidden">
-      <div className="w-full md:h-48">
+    <div className="bg-white max-w-full rounded-lg shadow-lg overflow-hidden">
+      <div className="w-full">
         <Img
           fluid={banner}
           objectFit="cover"
@@ -34,6 +34,15 @@ export const CarCard = (props: CarCardProps) => {
               </li>
             ))}
         </ul>
+
+        <button
+          onClick={() => {
+            onClick(title.toLocaleLowerCase().replace(" class", ""))
+          }}
+          className="w-full my-3 px-3 py-2 bg-transparent border border-wineDark text-wineDark rounded-lg hover:bg-black hover:text-white "
+        >
+          View all
+        </button>
       </div>
     </div>
   )
@@ -41,9 +50,10 @@ export const CarCard = (props: CarCardProps) => {
 
 declare interface CarCardProps {
   id: number
-  title: String
-  type: String
-  seats: String
-  tags: String[]
+  title: string
+  type: string
+  seats: number
+  onClick: (member: string) => void
+  tags: string[]
   banner: any
 }
