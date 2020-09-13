@@ -1,7 +1,8 @@
 import { graphql, useStaticQuery } from "gatsby"
-import React from "react"
+import React, { useState } from "react"
 import { CarCard, Title } from "../../components"
 import { config } from "../../config/fleets"
+import { Modal } from "../Modal"
 
 export const Fleet = () => {
   const data = useStaticQuery(graphql`
@@ -25,7 +26,7 @@ export const Fleet = () => {
           node {
             name
             childImageSharp {
-              fluid(pngQuality: 80) {
+              fluid(quality: 80) {
                 aspectRatio
                 base64
                 sizes
@@ -43,29 +44,38 @@ export const Fleet = () => {
 
   const fleets = config(data.allFile.edges)
 
+  const [isOpen, setIsOpen] = useState(false)
+  const [category, setCategory] = useState("")
+
+  const handleClick = (member: string) => {
+    setCategory(member)
+    setIsOpen(!isOpen)
+  }
+
   return (
     <section
       id="Fleet"
-      className="flex flex-col justify-around py-20 pl-5 md:pr-5 w-screen bg-cover"
+      className="flex flex-col justify-around py-20 md:p-5 w-screen bg-cover"
       style={{
         backgroundImage: `url(${data.file.childImageSharp.fluid.src})`,
       }}
     >
-      <Title>Our fleet</Title>
+      <Title>Meet our fleet</Title>
 
-      <div className="flex overflow-scroll no-scroll-bar">
-        <ul className="inline-flex lg:flex-wrap lg:justify-center">
+      <div className="flex">
+        <ul className="inline-flex flex-wrap justify-center">
           {fleets.map((fleet, index) => (
             <li
               key={`${index}_fleet`}
-              className="m-5 w-1/3"
-              style={{ minWidth: "24rem" }}
+              className="md:w-2/5 lg:w-1/3 my-5 mx-3 md:mx-5"
             >
-              <CarCard {...fleet} />
+              <CarCard {...fleet} onClick={handleClick} />
             </li>
           ))}
         </ul>
       </div>
+
+      <Modal isOpen={isOpen} onClick={handleClick} category={category} />
     </section>
   )
 }
