@@ -6,7 +6,7 @@ export const generateStars = (rating: number) => {
 
   for (let index = 0; index < rating; index++) {
     stars.push(
-      <li className="py-1 pr-2">
+      <li key={`${index}_stars`} className="py-1 pr-2">
         <FaStar />
       </li>
     )
