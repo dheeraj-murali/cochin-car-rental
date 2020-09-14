@@ -4,7 +4,7 @@ export const config = fleets => {
       const name = image.node.name
       const banner = image.node.childImageSharp.fluid
 
-      if (name === "fleet1") {
+      if (name === "category1") {
         return {
           title: `Standard Class`,
           type: `Sedans`,
@@ -21,7 +21,7 @@ export const config = fleets => {
         }
       }
 
-      if (name === "fleet2") {
+      if (name === "category2") {
         return {
           title: `Family Class`,
           type: `SUVs`,
@@ -38,7 +38,7 @@ export const config = fleets => {
         }
       }
 
-      if (name === "fleet3") {
+      if (name === "category3") {
         return {
           title: `Van Class`,
           type: `Van / Traveller`,
@@ -55,7 +55,7 @@ export const config = fleets => {
         }
       }
 
-      if (name === "fleet4") {
+      if (name === "category4") {
         return {
           title: `Coach Class`,
           type: `Bus`,

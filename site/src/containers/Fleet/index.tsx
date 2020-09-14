@@ -10,7 +10,7 @@ export const Fleet = () => {
       file(relativePath: { eq: "images/fleet.jpg" }) {
         publicURL
         childImageSharp {
-          fluid {
+          fluid(quality: 80) {
             src
           }
         }
@@ -19,7 +19,7 @@ export const Fleet = () => {
       allFile(
         filter: {
           extension: { regex: "/(png)/" }
-          name: { regex: "/(fleet)/" }
+          name: { regex: "/(category)/" }
         }
       ) {
         edges {
@@ -57,7 +57,7 @@ export const Fleet = () => {
       id="Fleet"
       className="flex flex-col justify-around py-20 md:p-5 w-screen bg-cover"
       style={{
-        backgroundImage: `url(${data.file.childImageSharp.fluid.src})`,
+        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)), url(${data.file.childImageSharp.fluid.src}) `,
       }}
     >
       <Title>Meet our fleet</Title>
