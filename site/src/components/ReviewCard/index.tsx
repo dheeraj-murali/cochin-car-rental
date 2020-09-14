@@ -4,7 +4,7 @@ import { generateStars } from "../../helpers/generateStars"
 import { getInitials } from "../../helpers/getInitials"
 
 export const ReviewCard = (props: ReviewCardProps) => {
-  const { message, name, rating, time, image } = props
+  const { message, name, rating } = props
 
   return (
     <div className="relative max-w-sm overflow-hidden">
