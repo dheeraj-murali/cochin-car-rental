@@ -1,11 +1,11 @@
 import React from "react"
 import {
-  FaDollarSign,
   FaCar,
-  FaExclamation,
-  FaStar,
   FaCheckDouble,
   FaClock,
+  FaDollarSign,
+  FaExclamation,
+  FaLanguage,
 } from "react-icons/fa"
 
 export const config = {
@@ -14,32 +14,32 @@ export const config = {
   content: [
     {
       title: `Fixed rates`,
-      content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci perspiciatis architecto porro nemo.`,
+      content: `Never worry about unpredictable fair ever again. We'll tell you what you have to pay beforehand and that is all you have to pay.`,
       icon: <FaDollarSign />,
     },
     {
       title: `Reliable Transport`,
-      content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci perspiciatis architecto porro nemo.`,
+      content: `On-time, every time! Our team of expert drivers not only makes sure that you are safe and reach your destination on time, but also that you enjoy the time you are with us.`,
       icon: <FaCar />,
     },
     {
       title: `Free Cancellation`,
-      content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci perspiciatis architecto porro nemo.`,
+      content: `We understand that plans change, and that's okay. Cancel your bookings at any time at no extra cost.`,
       icon: <FaExclamation />,
     },
     {
-      title: `Award winning Service`,
-      content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci perspiciatis architecto porro nemo.`,
-      icon: <FaStar />,
+      title: `Multilingual Drivers`,
+      content: `We train our drivers to be able to speak your language so that you can communicate in yours, and never worry about missing the point.`,
+      icon: <FaLanguage />,
     },
     {
       title: `Quality Vehicles`,
-      content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci perspiciatis architecto porro nemo.`,
+      content: `We make sure that our fleets are well maintained and serviced so that you can enjoy a safe and relaxing journey.`,
       icon: <FaCheckDouble />,
     },
     {
       title: `24H Customer Service`,
-      content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci perspiciatis architecto porro nemo.`,
+      content: `We are here day in and day out. Call us at any time. We are here to answer all of your queries.`,
       icon: <FaClock />,
     },
   ],
