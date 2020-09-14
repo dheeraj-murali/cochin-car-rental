@@ -32,7 +32,7 @@ export const Reviews = () => {
       id="Package"
       className="w-screen h-screen flex flex-col justify-center items-center"
       style={{
-        minHeight: "35rem",
+        minHeight: "45rem",
       }}
     >
       <Img
@@ -45,7 +45,7 @@ export const Reviews = () => {
 
       <div
         className="flex flex-col justify-center items-center absolute w-full h-full"
-        style={{ minHeight: "35rem" }}
+        style={{ minHeight: "45rem" }}
       >
         <Title>What our customers are saying</Title>
 
@@ -58,7 +58,7 @@ export const Reviews = () => {
               <li
                 key={`${index}_review`}
                 className="m-5 w-1/3"
-                style={{ minWidth: "18rem" }}
+                style={{ minWidth: "20rem" }}
               >
                 <ReviewCard {...review} />
               </li>

@@ -32,7 +32,7 @@ export const Modal = (props: ModalProps) => {
     <>
       {isOpen && members && (
         <div className="fixed z-20 left-0 top-0 w-screen h-screen overflow-y-auto bg-black bg-opacity-75">
-          <div className="bg-white mx-5 md:m-10 lg:mx-auto p-2 lg:p-10 border lg:w-3/4 transition delay-150 duration-300 ease-in-out transform scale-100 rounded-lg">
+          <div className="bg-white mx-5 my-20 md:m-10 lg:mx-auto p-2 lg:p-10 border lg:w-3/4 transition delay-150 duration-300 ease-in-out transform scale-100 rounded-lg">
             <div className="w-full flex justify-end p-5">
               <button
                 className="text-2xl text-gray-600 hover:text-wineDark"
