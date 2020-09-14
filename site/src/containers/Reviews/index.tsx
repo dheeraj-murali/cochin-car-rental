@@ -40,7 +40,7 @@ export const Reviews = () => {
         objectFit="cover"
         objectPosition="50% 50%"
         className="w-full h-full opacity-50"
-        alt="Awesome picture of cars in showroom"
+        alt="post its on wall"
       />
 
       <div

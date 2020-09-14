@@ -13,7 +13,7 @@ export const CarCard = (props: CarCardProps) => {
           objectFit="cover"
           objectPosition="50% 50%"
           className="w-full h-full"
-          alt="Awesome picture os cars in showroom"
+          alt={`${title}`}
         />
       </div>
 

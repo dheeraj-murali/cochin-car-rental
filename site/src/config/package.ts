@@ -6,7 +6,7 @@ export const config = packages =>
     if (name === "package1")
       return {
         title: `Are you planning a trip to Sabarimala on this season?`,
-        content: `If you're looking for reliable car rental options in Kochi, Cochin Car Rentals provides a wide variety of taxis you can choose from. Whether you're looking for extra leg room or a luggage carrier, you can pick from any of our Sedan, SUV or Minivan options.`,
+        content: `If you're looking for a reliable car rental option in Kochi, Cochin Car Rentals gives you a variety of options to choose. Whether you're looking for extra legroom or a luggage carrier, you can pick from any of our extensive fleet options.`,
         banner,
       }
 

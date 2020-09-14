@@ -24,7 +24,7 @@ export const PackageCard = (props: PackageCardProps) => {
           objectFit="cover"
           objectPosition="50% 50%"
           className="w-full h-full op"
-          alt="Awesome picture os cars in showroom"
+          alt={`${title}`}
         />
       </div>
       <div className="w-full h-full flex flex-col justify-between items-center p-5">
