@@ -3,6 +3,7 @@ import Img from "gatsby-image/withIEPolyfill"
 import React, { useRef } from "react"
 import { ReviewCard, Scroll, Title } from "../../components"
 import { scroll } from "../../helpers/scroll"
+import { config } from "../../config/review"
 
 export const Reviews = () => {
   const container = useRef<HTMLDivElement>(null!)
@@ -31,7 +32,7 @@ export const Reviews = () => {
       id="Package"
       className="w-screen h-screen flex flex-col justify-center items-center"
       style={{
-        minHeight: "35rem",
+        minHeight: "45rem",
       }}
     >
       <Img
@@ -44,7 +45,7 @@ export const Reviews = () => {
 
       <div
         className="flex flex-col justify-center items-center absolute w-full h-full"
-        style={{ minHeight: "35rem" }}
+        style={{ minHeight: "45rem" }}
       >
         <Title>What our customers are saying</Title>
 
@@ -53,21 +54,15 @@ export const Reviews = () => {
           className="w-full overflow-scroll no-scroll-bar m-2"
         >
           <ul className="inline-flex lg:ml-64">
-            <li className="m-5 w-1/3" style={{ minWidth: "18rem" }}>
-              <ReviewCard />
-            </li>
-            <li className="m-5 w-1/3" style={{ minWidth: "18rem" }}>
-              <ReviewCard />
-            </li>
-            <li className="m-5 w-1/3" style={{ minWidth: "18rem" }}>
-              <ReviewCard />
-            </li>
-            <li className="m-5 w-1/3" style={{ minWidth: "18rem" }}>
-              <ReviewCard />
-            </li>
-            <li className="m-5 w-1/3" style={{ minWidth: "18rem" }}>
-              <ReviewCard />
-            </li>
+            {config.map((review, index) => (
+              <li
+                key={`${index}_review`}
+                className="m-5 w-1/3"
+                style={{ minWidth: "20rem" }}
+              >
+                <ReviewCard {...review} />
+              </li>
+            ))}
           </ul>
         </div>
         <Scroll
