@@ -2,8 +2,8 @@ import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image/withIEPolyfill"
 import React, { useRef } from "react"
 import { ReviewCard, Scroll, Title } from "../../components"
+import { config } from "../../data/config/review"
 import { scroll } from "../../helpers/scroll"
-import { config } from "../../config/review"
 
 export const Reviews = () => {
   const container = useRef<HTMLDivElement>(null!)

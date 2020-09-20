@@ -1,7 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image/withIEPolyfill"
 import React from "react"
-import { Link } from "../../components"
 
 export const NotFound = () => {
   const data = useStaticQuery(graphql`

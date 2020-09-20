@@ -1,6 +1,6 @@
 import React from "react"
 import { Title } from "../../components"
-import { config } from "../../config/about"
+import { config } from "../../data/config/about"
 
 export const About = () => {
   return (
