@@ -4,12 +4,13 @@ import {
   About,
   Contact,
   Fleet,
+  Footer,
   Header,
   Hero,
   Package,
+  Reviews,
   SEO,
   Special,
-  Reviews,
 } from "../containers"
 import { AppProvider } from "../context"
 
@@ -25,6 +26,7 @@ export default function Home() {
       <Package />
       <Reviews />
       <Contact />
+      <Footer />
       <Alert />
     </AppProvider>
   )
