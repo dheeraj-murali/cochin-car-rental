@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import { Helmet } from "react-helmet"
-import { config } from "../../config/seo"
+import { config } from "../../data/config/seo"
 
 export const SEO = () => {
   const { site } = useStaticQuery(query)

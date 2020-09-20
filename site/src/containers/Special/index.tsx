@@ -1,6 +1,6 @@
 import React from "react"
 import { Feat, Title } from "../../components"
-import { config } from "../../config/special"
+import { config } from "../../data/config/special"
 
 export const Special = () => {
   return (

@@ -27,7 +27,7 @@ export const Button = (props: ButtonProps) => {
     <button
       disabled={isDisabled}
       type="submit"
-      className="inline-flex items-center h-12 bg-wineDark hover:bg-red-800 py-2 px-3 text-white font-medium rounded-lg shadow whitespace-no-wrap"
+      className="inline-flex items-center h-12 bg-wineDark hover:bg-red-800 focus:bg-red-800 py-2 px-3 text-white font-medium rounded-lg shadow whitespace-no-wrap"
     >
       <span className="pr-2">
         {loader ? (

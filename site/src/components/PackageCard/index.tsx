@@ -37,7 +37,7 @@ export const PackageCard = (props: PackageCardProps) => {
         </p>
 
         <Link
-          className="p-3 px-10 bg-transparent border border-wineDark text-wineDark rounded-lg hover:bg-black hover:text-white "
+          className="p-3 px-10 bg-transparent border border-wineDark text-wineDark rounded-lg hover:bg-black focus:bg-black hover:text-white focus:text-white"
           to="#Contact"
         >
           Book now

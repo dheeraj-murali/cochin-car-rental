@@ -1,8 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image/withIEPolyfill"
 import React from "react"
-import { Link, Title, PackageCard } from "../../components"
-import { config } from "../../config/package"
+import { PackageCard, Title } from "../../components"
+import { config } from "../../data/config/package"
 
 export const Package = () => {
   const data = useStaticQuery(graphql`

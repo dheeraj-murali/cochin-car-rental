@@ -1,6 +1,6 @@
 import React from "react"
 import { Logo, Nav } from "../../components"
-import { config } from "../../config/header"
+import { config } from "../../data/config/header"
 
 export const Header = () => {
   return (

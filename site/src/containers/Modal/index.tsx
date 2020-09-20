@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect } from "react"
 import { FaTimes } from "react-icons/fa"
 import { ItemCard } from "../../components/ItemCard"
-import { config } from "../../config/fleetMembers"
+import { config } from "../../data/config/fleetMembers"
 
 export const Modal = (props: ModalProps) => {
   const { isOpen, onClick, category } = props
@@ -45,7 +45,6 @@ export const Modal = (props: ModalProps) => {
             </div>
 
             <div className="lg:p-5">
-              {/* content */}
               <ul>
                 {members.map((member, index) => (
                   <li key={`${index}_fleetMembers`} className="py-3">

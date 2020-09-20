@@ -2,7 +2,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image/withIEPolyfill"
 import React from "react"
 import { Link } from "../../components"
-import { config } from "../../config/hero"
+import { config } from "../../data/config/hero"
 
 export const Hero = () => {
   const data = useStaticQuery(graphql`
@@ -50,7 +50,7 @@ export const Hero = () => {
         </div>
 
         <Link
-          className="p-3 px-10 w-48 bg-transparent border rounded-lg hover:bg-black text-white lg:mt-10"
+          className="p-3 px-10 w-48 bg-transparent border rounded-lg hover:bg-black focus:bg-black text-white lg:mt-10"
           to="#About"
         >
           Find out more

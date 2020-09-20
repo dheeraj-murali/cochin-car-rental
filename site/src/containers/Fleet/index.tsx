@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React, { useState } from "react"
 import { CarCard, Title } from "../../components"
-import { config } from "../../config/fleets"
+import { config } from "../../data/config/fleets"
 import { Modal } from "../Modal"
 
 export const Fleet = () => {
