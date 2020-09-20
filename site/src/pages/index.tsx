@@ -1,4 +1,5 @@
 import React from "react"
+import { Alert } from "../components"
 import {
   About,
   Contact,
@@ -10,10 +11,11 @@ import {
   Special,
   Reviews,
 } from "../containers"
+import { AppProvider } from "../context"
 
 export default function Home() {
   return (
-    <>
+    <AppProvider>
       <SEO />
       <Header />
       <Hero />
@@ -23,6 +25,7 @@ export default function Home() {
       <Package />
       <Reviews />
       <Contact />
-    </>
+      <Alert />
+    </AppProvider>
   )
 }

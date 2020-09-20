@@ -1,11 +1,13 @@
 import { FormikHelpers, useFormik } from "formik"
-import React from "react"
-import { FaRegPaperPlane } from "react-icons/fa"
-import { Input } from ".."
+import React, { useContext } from "react"
+import { Button, Input } from ".."
+import { AppContext } from "../../context"
 import { validate } from "../../helpers/validate"
 import { formService } from "../../service/formService"
 
 export const ContactForm = () => {
+  const { dispatch } = useContext(AppContext)
+
   const {
     handleSubmit,
     errors,
@@ -24,11 +26,25 @@ export const ContactForm = () => {
       const response = await formService(values)
       setSubmitting(false)
       if (response === "success") {
-        // show alert
+        dispatch({
+          type: "SHOW_ALERT",
+          payload: {
+            title: "Message send successfully!",
+            message: `We'll get back to you shortly.`,
+            type: "success",
+          },
+        })
       }
 
       if (response === "error") {
-        // show alert
+        dispatch({
+          type: "SHOW_ALERT",
+          payload: {
+            title: "Something went wrong!",
+            message: `Please try again after some time.`,
+            type: "error",
+          },
+        })
       }
     },
   })
@@ -80,14 +96,8 @@ export const ContactForm = () => {
         onBlur={handleBlur}
       />
 
-      <div className="w-full mt-3">
-        <button
-          disabled={isSubmitting}
-          type="submit"
-          className="bg-wineDark text-white flex justify-center items-center mx-auto p-3 rounded-lg"
-        >
-          <FaRegPaperPlane className="mx-2" /> Send message
-        </button>
+      <div className="flex w-full mt-3 justify-center">
+        <Button isDisabled={isSubmitting} loader={isSubmitting} />
       </div>
     </form>
   )
