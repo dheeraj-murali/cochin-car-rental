@@ -39,7 +39,7 @@ export const CarCard = (props: CarCardProps) => {
           onClick={() => {
             onClick(title.toLocaleLowerCase().replace(" class", ""))
           }}
-          className="w-full my-3 px-3 py-2 bg-transparent border border-wineDark text-wineDark rounded-lg hover:bg-black hover:text-white "
+          className="w-full my-3 px-3 py-2 bg-transparent border border-wineDark text-wineDark rounded-lg hover:bg-black focus:bg-black hover:text-white focus:text-white"
         >
           View all
         </button>

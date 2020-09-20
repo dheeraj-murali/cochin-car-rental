@@ -9,7 +9,7 @@ export const Nav = (props: NavProps) => {
       <ul className="inline-flex w-full justify-between">
         {links.map((link, index) => (
           <li key={`${index}_nav`} className="m-2 md:m-4">
-            <Link className="hover:text-wine" to={link.to}>
+            <Link className="hover:text-wine focus:text-wine" to={link.to}>
               {link.link}
             </Link>
           </li>
