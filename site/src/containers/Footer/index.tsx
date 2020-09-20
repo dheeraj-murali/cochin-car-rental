@@ -1,8 +1,12 @@
 import React from "react"
-import { Logo, Social } from "../../components"
+import { Fab, Logo, Social } from "../../components"
 import { config } from "../../config/footer"
 
 export const Footer = () => {
+  const whatsApp = config.socials.filter(
+    social => social.item === "whatsApp"
+  )[0].link
+
   return (
     <footer
       id="contact"
@@ -38,7 +42,7 @@ export const Footer = () => {
             {config.socials.map((social, index) =>
               social.link ? (
                 <li
-                  key={`${index}-social`}
+                  key={`${index}_social`}
                   className="text-3xl text-white p-5 "
                 >
                   <Social item={social.item} link={social.link} />
@@ -47,6 +51,10 @@ export const Footer = () => {
             )}
           </ul>
         </div>
+      </div>
+
+      <div>
+        <Fab link={whatsApp} />
       </div>
     </footer>
   )
