@@ -1,4 +1,4 @@
-import { generateKeywords } from "../helpers/generateKeywords"
+import { generateKeywords } from "../../helpers/generateKeywords"
 
 export const config = () => {
   return {

@@ -3,7 +3,7 @@ import moment from "moment"
 export const config: {
   title: string
   text: string
-  background: string
+  link: string
   copyright: string
   credits: { username: string; link: string }
   socials: {
@@ -12,8 +12,8 @@ export const config: {
   }[]
 } = {
   title: "",
-  text: "A division of series tours pvt ltd.",
-  background: `rgb(0,0,0)`,
+  text: "A division of series tours",
+  link: ``,
   copyright: `COPYRIGHT © ${moment().year()} SERIES TOURS. ALL RIGHTS RESERVED.`,
   credits: { username: `@_mdrj`, link: "https://twitter.com/_mdrj" },
   socials: [
