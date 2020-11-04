@@ -4,7 +4,9 @@
   <a href="https://github.com/dheeraj-murali/cochin-car-rental">
     <img src="https://raw.githubusercontent.com/dheeraj-murali/cochin-car-rental/main/site/static/favicon.ico" alt="Logo" width="80" height="80">
   </a>
-
+  <br />
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/67e7e89e-c115-40f2-ba08-6697a4497c4f/deploy-status)](https://app.netlify.com/sites/cochin-car-rentals/deploys)
+  <br />
   <h3 align="center">Cochin Car Rental</h3>
 
   <p align="center">
@@ -19,86 +21,82 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
+
 ## Table of Contents
 
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
-
-
+-   [About the Project](#about-the-project)
+    -   [Built With](#built-with)
+-   [Getting Started](#getting-started)
+    -   [Installation](#installation)
+-   [Usage](#usage)
+-   [Roadmap](#roadmap)
+-   [Contributing](#contributing)
+-   [License](#license)
+-   [Contact](#contact)
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 ![Cochin car rental Screen Shot](https://raw.githubusercontent.com/dheeraj-murali/cochin-car-rental/main/site/src/data/images/Screenshot.png)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`
-
+Cochin car rental a sister concern of Series tours is one of the leading Kerala Tour Operators - engaged in the promotion of Kerala Tour Packages & Destinations. We focus on providing our customers with the best car rental and tour package they can enjoy inside of Kerala. With a fleet of trained drivers, highly maintained vehicles and exceptional customer service, we have become one of the best taxi services in Kerala. We provide the best deals in hiring Cars, Buses and Mini-buses for all your needs.
 
 ### Built With
 
-* []()
-* []()
-* []()
-
-
+-   [reactjs](https://github.com/reactjs/reactjs.org)
+-   [gatsbyjs](https://github.com/gatsbyjs/gatsby)
+-   [tailwindcss](https://github.com/tailwindlabs/tailwindcss)
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
-
 ### Installation
 
 1. Clone the repo
+
 ```sh
-git clone https://github.com/github_username/repo_name.git
+git clone https://github.com/dheeraj-murali/cochin-car-rental.git
 ```
-2. Install NPM packages
+
+2. Install gatsby
+
+```sh
+npm install gatsby -g
+```
+
+3. Install packages
+
 ```sh
 npm install
 ```
 
+or
 
+```sh
+yarn install
+```
 
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+This project is build using gatsby
 
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
+_For more examples, please refer to the [Gatsby Documentation](https://www.gatsbyjs.com)_
 
 <!-- ROADMAP -->
+
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
-
-
+See the [open issues](https://github.com/dheeraj-murali/cochin-car-rental/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -109,52 +107,33 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-
 <!-- LICENSE -->
+
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
+Distributed under the GNU General Public License v3.0. See `LICENSE` for more information.
 
 <!-- CONTACT -->
+
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Dheeraj Murali - [@\_mdrj](https://twitter.com/_mdrj) - 410dheeraj@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
-
-
-
-
+Project Link: [https://github.com/dheeraj-murali/cochin-car-rental](https://github.com/dheeraj-murali/cochin-car-rental)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=flat-square
-[contributors-url]: https://github.com/github_username/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=flat-square
-[forks-url]: https://github.com/github_username/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=flat-square
-[stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=flat-square
-[issues-url]: https://github.com/github_username/repo/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=flat-square
-[license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
+
+[contributors-shield]: https://img.shields.io/github/contributors/dheeraj-murali/repo.svg?style=flat-square
+[contributors-url]: https://github.com/dheeraj-murali/repo/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/dheeraj-murali/repo.svg?style=flat-square
+[forks-url]: https://github.com/dheeraj-murali/repo/network/members
+[stars-shield]: https://img.shields.io/github/stars/dheeraj-murali/repo.svg?style=flat-square
+[stars-url]: https://github.com/dheeraj-murali/repo/stargazers
+[issues-shield]: https://img.shields.io/github/issues/dheeraj-murali/repo.svg?style=flat-square
+[issues-url]: https://github.com/dheeraj-murali/repo/issues
+[license-shield]: https://img.shields.io/github/license/dheeraj-murali/repo.svg?style=flat-square
+[license-url]: https://github.com/dheeraj-murali/repo/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username
+[linkedin-url]: https://linkedin.com/in/dheeraj-murali
 [product-screenshot]: images/screenshot.png
-# Cochin-car-rental
-
-Simple landing page for cochin-car-rental
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/67e7e89e-c115-40f2-ba08-6697a4497c4f/deploy-status)](https://app.netlify.com/sites/cochin-car-rentals/deploys)
