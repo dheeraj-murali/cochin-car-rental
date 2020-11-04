@@ -4,9 +4,6 @@
   <a href="https://github.com/dheeraj-murali/cochin-car-rental">
     <img src="https://raw.githubusercontent.com/dheeraj-murali/cochin-car-rental/main/site/static/favicon.ico" alt="Logo" width="80" height="80">
   </a>
-  <br />
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/67e7e89e-c115-40f2-ba08-6697a4497c4f/deploy-status)](https://app.netlify.com/sites/cochin-car-rentals/deploys)
-  <br />
   <h3 align="center">Cochin Car Rental</h3>
 
   <p align="center">
@@ -48,6 +45,7 @@ Cochin car rental a sister concern of Series tours is one of the leading Kerala 
 -   [reactjs](https://github.com/reactjs/reactjs.org)
 -   [gatsbyjs](https://github.com/gatsbyjs/gatsby)
 -   [tailwindcss](https://github.com/tailwindlabs/tailwindcss)
+-   [![Netlify Status](https://api.netlify.com/api/v1/badges/67e7e89e-c115-40f2-ba08-6697a4497c4f/deploy-status)](https://app.netlify.com/sites/cochin-car-rentals/deploys)
 
 <!-- GETTING STARTED -->
 
